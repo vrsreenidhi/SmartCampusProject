@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Analytics</title>
+</head>
+
+<body>
+
+    <h1>Student Performance Analytics</h1>
+
+    <h2>Statistics</h2>
+
+    <p>Math Average : {{ math_avg }}</p>
+    <p>Science Average : {{ science_avg }}</p>
+    <p>English Average : {{ english_avg }}</p>
+
+    <h2>Top Performers</h2>
+
+    <p>Math : {{ top_math }}</p>
+    <p>Science : {{ top_science }}</p>
+    <p>English : {{ top_english }}</p>
+
+    <img src="{{ url_for('static', filename='chart.png') }}" width="600">
+
+</body>
+
+</html>

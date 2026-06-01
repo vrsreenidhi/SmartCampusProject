@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Academic Records</title>
+</head>
+
+<body>
+
+    <h1>Student Academic Records</h1>
+
+    <h2>Stored Records</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+
+        {% for row in records %}
+
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+        </tr>
+
+        {% endfor %}
+
+    </table>
+
+    <h2>Report</h2>
+
+    <p>Total Students: {{ total_students }}</p>
+
+    <p>Average Marks: {{ average_marks }}</p>
+
+    <p>Top Student: {{ top_student }}</p>
+
+</body>
+
+</html>

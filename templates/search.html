@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search Student IDs</title>
+</head>
+
+<body>
+
+    <h2>Search Student IDs</h2>
+
+    <h3>Sorted Student IDs</h3>
+
+    <p>{{ ids }}</p>
+
+    <form method="POST">
+
+        Enter Student ID:
+
+        <input type="number" name="student_id" required>
+
+        <button type="submit">
+            Search
+        </button>
+
+    </form>
+
+    {% if result %}
+
+    <h3>{{ result }}</h3>
+
+    {% endif %}
+
+</body>
+
+</html>

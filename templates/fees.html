@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fee Calculator</title>
+</head>
+
+<body>
+
+    <h2>Student Fee Calculator</h2>
+
+    <form method="POST">
+
+        Tuition Fee:
+        <input type="number" name="tuition" required>
+
+        <br><br>
+
+        Hostel Fee:
+        <input type="number" name="hostel">
+
+        <br><br>
+
+        Transportation Fee:
+        <input type="number" name="transport">
+
+        <br><br>
+
+        <button type="submit">
+            Calculate Fee
+        </button>
+
+    </form>
+
+    {% if total %}
+
+    <h3>Total Fee = ₹{{ total }}</h3>
+
+    {% endif %}
+
+</body>
+
+</html>

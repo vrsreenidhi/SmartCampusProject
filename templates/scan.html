@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Directory Scanner</title>
+</head>
+
+<body>
+
+    <h1>Directory Scanner</h1>
+
+    <form method="POST">
+
+        Enter Folder Path:
+
+        <input type="text" name="path" required>
+
+        <button type="submit">
+            Scan
+        </button>
+
+    </form>
+
+    {% if result %}
+
+    <pre>
+{{ result }}
+</pre>
+
+    {% endif %}
+
+</body>
+
+</html>
